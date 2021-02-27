@@ -7,6 +7,7 @@ terraform {
     }
   }
 }
+
 resource "vmworkstation_vm" "test_machine" {
   sourceid     = var.vmws_reource_frontend_sourceid
   denomination = var.vmws_reource_frontend_denomination
