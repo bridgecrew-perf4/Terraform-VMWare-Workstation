@@ -18,7 +18,7 @@ https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/G
 # Clone 
 git clone https://github.com/ejbest/Terraform-VMWare-Workstation.git
 #
-# Set the passwords that are in main.tf
+# Set the passwords that match doInTerminal2.sh 
 vmrest -C  
 # 
 # Do this in one terminal session
