@@ -12,24 +12,38 @@ https://registry.terraform.io/providers/elsudano/vmworkstation/latest/docs
 
 Setup the REST Listner 
 https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-C3361DF5-A4C1-432E-850C-8F60D83E5E2B.html
-
 </pre>
-
 # Here is the steps so far 
-
 <pre>
 # Clone 
 git clone https://github.com/ejbest/Terraform-VMWare-Workstation.git
-
+#
 # Set the passwords that are in main.tf
 vmrest -C  
-
+# 
+# Do this in one terminal session
+bash doInTerminal1.sh
+#
+# Open a browser and login here
 http://localhost:8697/
-
+#
+# Open a second terminal session
+bash doInterminal2.sh
+#
+#
+if this does not fail we hope a new VM has been created
 </pre>
-
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 # Other Similar Result Here as a user got a similar solution
-
 <pre>
 https://github.com/elsudano/terraform-provider-vmworkstation
 </pre>
