@@ -1,12 +1,21 @@
-terraform {
-  required_version = ">= 0.13"
-  required_providers {
-    vmworkstation = {
-      source  = "elsudano/vmworkstation"
-      version = "0.1.5"
-    }
-  }
+
+provider "vsphere" {
+  user = "ejbest"
+  password = "tT!666666"
+  vsphere_server = "http://localhost:8697/"
+  # If you have a self-signed cert
+  allow_unverified_ssl = true
 }
+
+# terraform {
+#   required_version = ">= 0.13"
+#   required_providers {
+#     provider "vmworkstation" {
+#       source  = "elsudano/vmworkstation"
+#       version = ">=0.1.9"
+#     }
+#   }
+# }
 
 resource "vmworkstation_vm" "test_machine" {
   sourceid     = var.vmws_reource_frontend_sourceid
