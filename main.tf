@@ -16,8 +16,8 @@ terraform {
 }
 
 provider "vmworkstation" {
-  user           = "ejbest"
-  password       = "tT!666666"
+  #user           = "ejbest"
+  #password       = "tT!666666"
   #vsphere_server = "http://localhost:8697/"
 }
 

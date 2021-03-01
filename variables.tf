@@ -1,8 +1,9 @@
 variable "vmws_reource_frontend_sourceid" {
   type        = string
   description = "WindowsOne-sourceid"
-  default     = "mysouceid"
+  default     = "EQDJ2II64KFKRFQR1EA2F2TN4DF4M357"
 }
+
 variable "vmws_reource_frontend_denomination" {
   type        = string
   description = "WindowsOne-Instance" 
