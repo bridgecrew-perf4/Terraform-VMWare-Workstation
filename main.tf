@@ -1,10 +1,24 @@
+# provider "vsphere" {
+#   user = "ejbest"
+#   password = "tT!666666"
+#   vsphere_server = "http://localhost:8697/"
+#   # If you have a self-signed cert
+#   allow_unverified_ssl = true
+# }
 
-provider "vsphere" {
-  user = "ejbest"
-  password = "tT!666666"
-  vsphere_server = "http://localhost:8697/"
-  # If you have a self-signed cert
-  allow_unverified_ssl = true
+terraform {
+  required_providers {
+      vmworkstation = {
+      source        = "elsudano/vmworkstation"
+      version       = "0.1.9"
+    }
+  }
+}
+
+provider "vmworkstation" {
+  user           = "ejbest"
+  password       = "tT!666666"
+  #vsphere_server = "http://localhost:8697/"
 }
 
 # terraform {
