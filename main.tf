@@ -1,16 +1,8 @@
-# provider "vsphere" {
-#   user = "ejbest"
-#   password = "tT!666666"
-#   vsphere_server = "http://localhost:8697/"
-#   # If you have a self-signed cert
-#   allow_unverified_ssl = true
-# }
-
 terraform {
   required_providers {
       vmworkstation = {
       source        = "elsudano/vmworkstation"
-      version       = "0.1.5"
+      version       = "0.1.7"
     }
   }
 }
@@ -38,6 +30,3 @@ resource "vmworkstation_vm" "test_machine" {
   processors   = var.vmws_reource_frontend_processors
   memory       = var.vmws_reource_frontend_memory
 }
-
-
-
