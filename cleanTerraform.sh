@@ -1,4 +1,4 @@
-set -x
+#set -x
 #*********************************************
 rm -Rfv .terraform.lock.hcl
 rm -Rfv terraform.lock.hcl
