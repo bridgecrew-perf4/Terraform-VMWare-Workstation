@@ -8,6 +8,7 @@ Terraform-UbuntuWorkstation.git
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.out
 
 # Crash log files
 crash.log
